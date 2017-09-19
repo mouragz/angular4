@@ -1,0 +1,12 @@
+{
+    "SERVERNAME": "{{ name }}!",
+    "RELOAD": "重新加载页面",
+    "NAME": "{{name}}",
+    "STATUS": "服务器状态为 {{ status }}",
+    "NAMESERVER": "服务器名称",
+    "STATUSSERVER":"服务器状态",
+    "ON":"线上",
+    "OFF":"离线",
+    "UPDATE":"更新服务器"
+  }
+  

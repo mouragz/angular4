@@ -1,0 +1,14 @@
+{
+  "name": "new-cling4",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/mouragz/routing-start",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

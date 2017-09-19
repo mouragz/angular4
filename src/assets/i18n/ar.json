@@ -1,0 +1,10 @@
+{
+  "TITLE": "Angular Translator Demo",
+  "HELLO_WORLD": "مرحبا!",
+  "HOME":"المنزل",
+  "SERVERS":"الخوادم",
+  "USERS":"المستخدمين",
+  "LANGENG":"انجليزي",
+  "LANGARAB":"عربي",
+  "LANGCHINA":"صيني"
+}

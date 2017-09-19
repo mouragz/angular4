@@ -1,0 +1,7 @@
+{
+    "GREETING": "Hallo {{ name }}!",
+    "ID": "User with ID {{ id }} loaded.",
+    "NAME": "User name is {{name}}",
+    "AGE": "age"
+  }
+  

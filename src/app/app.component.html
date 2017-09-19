@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="nav nav-tabs">
+        <li class="nav-item" role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a routerLink="/" class="nav-link">{{ 'HOME' | translate }}</a>
+        </li>
+        <li class="nav-item" role="presentation" routerLinkActive="active">
+          <a routerLink="/servers" class="nav-link">{{ 'SERVERS' | translate }}</a>
+        </li>
+        <li class="nav-item" role="presentation" routerLinkActive="active">
+          <a [routerLink]="['/users']" class="nav-link">{{ 'USERS' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+    
+    <!--<p>{{ 'HELLO_WORLD' | translate }}</p> -->
+    <div class="form-group">
+        <select
+        (change)="toogleLanguage($event.target.value)"
+          class="form-control"
+          >
+          <option value="en" [selected]="translatorContainer.language === 'en'" translate="LANGENG"></option>
+          <option value="ar" [selected]="translatorContainer.language === 'ar'" translate="LANGARAB"></option>
+          <option value="ch" [selected]="translatorContainer.language === 'ch'" translate="LANGCHINA"></option>
+        </select>
+      </div>
+   <!-- <select (change)="toogleLanguage($event.target.value)">
+        <option value="en" [selected]="translatorContainer.language === 'en'">English</option>
+        <option value="ar" [selected]="translatorContainer.language === 'ar'">عربي</option>
+        <option value="ch" [selected]="translatorContainer.language === 'ch'">Chinese (Simplified)</option>
+    </select> -->
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+ 
+</div>
+
+

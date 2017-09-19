@@ -1,0 +1,12 @@
+{
+    "SERVERNAME": "{{ name }}!",
+    "RELOAD": "Reload Page",
+    "NAME": "{{name}}",
+    "STATUS": "Server status is {{ status }}",
+    "NAMESERVER": "Server Name",
+    "STATUSSERVER":"Server Status",
+    "ON":"Online",
+    "OFF":"Offline",
+    "UPDATE":"Update Server"
+  }
+  
