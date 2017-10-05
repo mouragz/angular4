@@ -43,7 +43,18 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
         loader: 'file-loader?name=assets/[name].[hash].[ext]'
+     //   loader: 'url-loader?name=assets/[name].[hash].[ext]'
       },
+      // {
+     //   test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+      //  loader: 'file-loader'
+     //   loader: 'url-loader?name=assets/[name].[hash].[ext]'
+     //},
+     
+     /*{
+       test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/,
+       loader: 'file-loader',
+     },*/
       {
         test: /\.scss$/,
         exclude: helpers.root('src', 'app'),
@@ -55,8 +66,10 @@ module.exports = {
         loaders: [
           'raw-loader',
           'sass-loader?' +
-          'includePaths[]=' + helpers.root('node_modules/bootstrap/scss')
+          'includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss/angular/mdb-angular-free')
+          //'includePaths[]=' + helpers.root('node_modules/bootstrap/scss')
           //+'&includePaths[]=' + helpers.root('src/libs/font-awesome/scss')
+          //+'&includePaths[]=' + helpers.root('node_modules/mdbootstrap/font/roboto')
         ] // sass-loader not scss-loader
       },
       {

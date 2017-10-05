@@ -49,6 +49,7 @@
     "@angular/compiler-cli": "4.0.0",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
+    "angular-bootstrap-md": "^4.3.5",
     "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^3.2.3",
     "codelyzer": "~2.0.0-beta.4",
@@ -62,6 +63,7 @@
     "karma-coverage-istanbul-reporter": "^0.2.0",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "mdbootstrap": "^4.4.1",
     "ngx-bootstrap": "^1.9.1",
     "protractor": "~5.1.0",
     "rimraf": "^2.6.1",
@@ -70,6 +72,7 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.4.2",
     "typescript": "~2.2.0",
+    "url-loader": "^0.6.2",
     "webpack-rtl-plugin": "^1.6.0"
   }
 }
