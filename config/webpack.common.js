@@ -61,6 +61,14 @@ module.exports = {
         loader: ExtractTextPlugin.extract('css-loader!sass-loader')
       },
       {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.scss$/,
         include: helpers.root('src', 'app'),
         loaders: [
@@ -70,7 +78,7 @@ module.exports = {
           //'includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss/angular/mdb-angular-free')
           //'includePaths[]=' + helpers.root('node_modules/bootstrap/scss')
           //+'&includePaths[]=' + helpers.root('src/libs/font-awesome/scss')
-          //+'&includePaths[]=' + helpers.root('node_modules/mdbootstrap/font/roboto')
+          +'&includePaths[]=' + helpers.root('node_modules/mdbootstrap/font/roboto')
         ] // sass-loader not scss-loader
       },
       {
