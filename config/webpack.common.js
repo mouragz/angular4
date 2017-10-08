@@ -74,11 +74,9 @@ module.exports = {
         loaders: [
           'raw-loader',
           'sass-loader?' +
-          'includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss')
-          //'includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss/angular/mdb-angular-free')
-          //'includePaths[]=' + helpers.root('node_modules/bootstrap/scss')
-          //+'&includePaths[]=' + helpers.root('src/libs/font-awesome/scss')
-          //node_modules
+          //'includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss')
+          'includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss/bootstrap')
+          +'&includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss/mdb-free')
           +'&includePaths[]=' + helpers.root('node_modules/font-awesome/scss')
           +'&includePaths[]=' + helpers.root('node_modules/mdbootstrap/font/roboto')
         ] // sass-loader not scss-loader
