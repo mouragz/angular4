@@ -43,23 +43,32 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
         loader: 'file-loader?name=assets/[name].[hash].[ext]'
-     //   loader: 'url-loader?name=assets/[name].[hash].[ext]'
+        //   loader: 'url-loader?name=assets/[name].[hash].[ext]'
       },
       // {
-     //   test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+      //   test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
       //  loader: 'file-loader'
-     //   loader: 'url-loader?name=assets/[name].[hash].[ext]'
-     //},
-     
-     /*{
-       test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/,
-       loader: 'file-loader',
-     },*/
+      //   loader: 'url-loader?name=assets/[name].[hash].[ext]'
+      //},
+
+      /*{
+        test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader',
+      },*/
+      {
+        test: /\.css$/,
+        loaders: 'style-loader!css-loader'
+      },
       {
         test: /\.scss$/,
         exclude: helpers.root('src', 'app'),
         loader: ExtractTextPlugin.extract('css-loader!sass-loader')
       },
+      /*{
+        test: /\.css$/,
+        include: helpers.root('src', 'app'),
+        loader: 'raw-loader!css-loader'
+      },*/
       /*{
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000&mimetype=application/font-woff'
@@ -76,9 +85,9 @@ module.exports = {
           'sass-loader?' +
           //'includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss')
           'includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss/bootstrap')
-          +'&includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss/mdb-free')
-          +'&includePaths[]=' + helpers.root('node_modules/font-awesome/scss')
-          +'&includePaths[]=' + helpers.root('node_modules/mdbootstrap/font/roboto')
+          + '&includePaths[]=' + helpers.root('node_modules/angular-bootstrap-md/scss/mdb-free')
+          + '&includePaths[]=' + helpers.root('node_modules/font-awesome/scss')
+          + '&includePaths[]=' + helpers.root('node_modules/mdbootstrap/font/roboto')
         ] // sass-loader not scss-loader
       },
       {
