@@ -10,6 +10,7 @@ import '../assets/sass/build/ltr/shared.scss';
 export class AppComponent {
   dir: string;
   lang: string ="en";
+  public radioModel: string = 'Left';
   constructor( @Inject(DOCUMENT) private document: any, private translator: Translator, public translatorContainer: TranslatorContainer) { }
   toogleLanguage(lang) {
     

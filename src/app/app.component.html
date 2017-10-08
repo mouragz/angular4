@@ -34,126 +34,280 @@
  
 </div>
 -->
-<!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
-  
-<!-- Navbar brand -->
-<logo><a class="navbar-brand" href="#">Navbar</a></logo>
+<div class="container">
+  <!-- Content here -->
 
-<!-- Collapsible content -->
-<links>
+  <!--Navbar-->
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
 
-<!-- Links -->
-<ul class="navbar-nav mr-auto">
-   <li class="nav-item active">
-       <a class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
-   </li>
-   <li class="nav-item">
-       <a class="nav-link waves-light" mdbRippleRadius>Features</a>
-   </li>
-   <li class="nav-item">
-       <a class="nav-link waves-light" mdbRippleRadius>Pricing</a>
-   </li>
+    <!-- Navbar brand -->
+    <logo><a class="navbar-brand" href="#">Navbar</a></logo>
 
-   <!-- Dropdown -->
-   <li class="nav-item dropdown" dropdown>
-       <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle" mdbRippleRadius>
+    <!-- Collapsible content -->
+    <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbRippleRadius>Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbRippleRadius>Pricing</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbRippleRadius class="nav-link dropdown-toggle" mdbRippleRadius>
        Dropdown<span class="caret"></span></a>
-       <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-           <a class="dropdown-item waves-light" mdbRippleRadius href="#">Action</a>
-           <a class="dropdown-item waves-light" mdbRippleRadius href="#">Another action</a>
-           <a class="dropdown-item waves-light" mdbRippleRadius href="#">Something else here</a>
-       </div> 
-   </li>
+          <div class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-effect waves-light" mdbRippleRadius href="#">Action</a>
+            <a class="dropdown-item waves-effect waves-light" mdbRippleRadius href="#">Another action</a>
+            <a class="dropdown-item waves-effect waves-light" mdbRippleRadius href="#">Something else here</a>
+          </div>
+        </li>
 
-</ul>
-<!-- Links -->
+      </ul>
+      <!-- Links -->
 
-<!-- Search form -->
-<form class="form-inline  waves-light" mdbRippleRadius>
-   <input class="form-control mr-sm-2" type="text" placeholder="Search">
-</form>
-</links>
-<!-- Collapsible content -->
+      <!-- Search form -->
+      <form class="form-inline  waves-light" mdbRippleRadius>
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      </form>
+    </links>
+    <!-- Collapsible content -->
 
-</mdb-navbar>
-<!--/.Navbar-->
+  </mdb-navbar>
+  <!--/.Navbar-->
+
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      1 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      1 of 3
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-6">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-5">
+      2 of 3 (wider)
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+
+  <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+  <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Primary</button>
+
+  <!-- Default button -->
+  <button type="button" class="btn btn-default waves-light" mdbRippleRadius>Default</button>
+
+  <!-- Secondary button -->
+  <button type="button" class="btn btn-secondary waves-light" mdbRippleRadius>Secondary</button>
+
+  <!-- Indicates a successful or positive action -->
+  <button type="button" class="btn btn-success waves-light" mdbRippleRadius>Success</button>
+
+  <!-- Contextual button for informational alert messages -->
+  <button type="button" class="btn btn-info waves-light" mdbRippleRadius>Info</button>
+
+  <!-- Indicates caution should be taken with this action -->
+  <button type="button" class="btn btn-warning waves-light" mdbRippleRadius>Warning</button>
+
+  <!-- Indicates a dangerous or potentially negative action -->
+  <button type="button" class="btn btn-danger waves-light" mdbRippleRadius>Danger</button>
+
+  <!--Elegant-->
+  <button type="button" class="btn btn-elegant waves-light" mdbRippleRadius>Elegant</button>
+
+  <!--Unique-->
+  <button type="button" class="btn btn-unique waves-light" mdbRippleRadius>Unique</button>
+
+  <!--Pink-->
+  <button type="button" class="btn btn-pink waves-light" mdbRippleRadius>Pink</button>
+
+  <!--Purple-->
+  <button type="button" class="btn btn-purple waves-light" mdbRippleRadius>Purple</button>
+
+  <!--Deep-purple-->
+  <button type="button" class="btn btn-deep-purple waves-light" mdbRippleRadius>Deep-purple</button>
+
+  <!--Indigo-->
+  <button type="button" class="btn btn-indigo waves-light" mdbRippleRadius>Indigo</button>
+
+  <!--Light blue-->
+  <button type="button" class="btn btn-light-blue waves-light" mdbRippleRadius>Light blue</button>
+
+  <!--Cyan-->
+  <button type="button" class="btn btn-cyan waves-light" mdbRippleRadius>Cyan</button>
+
+  <!--Dark-green-->
+  <button type="button" class="btn btn-dark-green waves-light" mdbRippleRadius>Dark-green</button>
+
+  <!--Light-green-->
+  <button type="button" class="btn btn-light-green waves-light" mdbRippleRadius>Light-green</button>
+
+  <!--Yellow-->
+  <button type="button" class="btn btn-yellow waves-light" mdbRippleRadius>Yellow</button>
+
+  <!--Amber-->
+  <button type="button" class="btn btn-amber waves-light" mdbRippleRadius>Amber</button>
+
+  <!--Deep-orange-->
+  <button type="button" class="btn btn-deep-orange waves-light" mdbRippleRadius>Deep-orange</button>
+
+  <!--Brown-->
+  <button type="button" class="btn btn-brown waves-light" mdbRippleRadius>Brown</button>
+
+  <!--Blue-grey-->
+  <button type="button" class="btn btn-blue-grey waves-light" mdbRippleRadius>Blue-grey</button>
+
+  <!--MDB-->
+  <button type="button" class="btn btn-mdb waves-light" mdbRippleRadius>MDB</button>
 
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Primary</button>
+  <button type="button" class="btn btn-outline-primary" mdbRippleRadius>Primary</button>
+  <button type="button" class="btn btn-outline-default" mdbRippleRadius>Default</button>
+  <button type="button" class="btn btn-outline-secondary" mdbRippleRadius>Secondary</button>
+  <button type="button" class="btn btn-outline-success" mdbRippleRadius>Success</button>
+  <button type="button" class="btn btn-outline-info" mdbRippleRadius>Info</button>
+  <button type="button" class="btn btn-outline-warning" mdbRippleRadius>Warning</button>
+  <button type="button" class="btn btn-outline-danger" mdbRippleRadius>Danger</button>
 
-<!-- Default button -->
-<button type="button" class="btn btn-default waves-light" mdbRippleRadius>Default</button>
+  <div class="btn-group">
+    <label class="btn btn-primary waves-light" [(ngModel)]="radioModel" mdbRadio="Left" mdbRippleRadius>
+      Radio 1 (preselected)
+  </label>
+    <label class="btn btn-primary waves-light" [(ngModel)]="radioModel" mdbRadio="Middle" mdbRippleRadius>
+      Radio 2
+  </label>
+    <label class="btn btn-primary waves-light" [(ngModel)]="radioModel" mdbRadio="Right" mdbRippleRadius>
+      Radio 3
+  </label>
+  </div>
 
-<!-- Secondary button -->
-<button type="button" class="btn btn-secondary waves-light" mdbRippleRadius>Secondary</button>
 
-<!-- Indicates a successful or positive action -->
-<button type="button" class="btn btn-success waves-light" mdbRippleRadius>Success</button>
+  <!--Card-->
+  <div class="card">
 
-<!-- Contextual button for informational alert messages -->
-<button type="button" class="btn btn-info waves-light" mdbRippleRadius>Info</button>
+    <!--Card image-->
+    <div class="view hm-white-slight waves-light" mdbRippleRadius>
+      <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
+      <a>
+        <div class="mask"></div>
+      </a>
+    </div>
 
-<!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn btn-warning waves-light" mdbRippleRadius>Warning</button>
+    <!--Card content-->
+    <div class="card-body">
+      <!--Title-->
+      <h4 class="card-title">Card title</h4>
+      <!--Text-->
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a class="btn btn-primary waves-light" mdbRippleRadius>Button</a>
+    </div>
 
-<!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn btn-danger waves-light" mdbRippleRadius>Danger</button>
-                                    
-                                <!--Elegant-->
-<button type="button" class="btn btn-elegant waves-light" mdbRippleRadius>Elegant</button>
+  </div>
+  <!--/.Card-->
 
-<!--Unique-->
-<button type="button" class="btn btn-unique waves-light" mdbRippleRadius>Unique</button>
 
-<!--Pink-->
-<button type="button" class="btn btn-pink waves-light" mdbRippleRadius>Pink</button>
+  <!-- Card -->
+  <div class="card card-image mb-3" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
 
-<!--Purple-->
-<button type="button" class="btn btn-purple waves-light" mdbRippleRadius>Purple</button>
+    <!-- Content -->
+    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+      <div>
+        <h5 class="pink-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+        <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio vero odio
+          nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!.</p>
+        <a class="btn btn-pink waves-light" mdbRippleRadius><i class="fa fa-clone left"></i> View project</a>
+      </div>
+    </div>
+    <!-- Content -->
+  </div>
+  <!-- Card -->
 
-<!--Deep-purple-->
-<button type="button" class="btn btn-deep-purple waves-light" mdbRippleRadius>Deep-purple</button>
+  <!-- Card -->
+  <div class="card card-image mb-3" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20(47).jpg');">
 
-<!--Indigo-->
-<button type="button" class="btn btn-indigo waves-light" mdbRippleRadius>Indigo</button>
+    <!-- Content -->
+    <div class="text-white text-center d-flex align-items-center rgba-indigo-strong py-5 px-4">
+      <div>
+        <h5 class="orange-text"><i class="fa fa-desktop"></i> Software</h5>
+        <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem, optio vero odio
+          nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!.</p>
+        <a class="btn btn-deep-orange waves-light" mdbRippleRadius><i class="fa fa-clone left"></i> View project</a>
+      </div>
+    </div>
+    <!-- Content -->
+  </div>
+  <!-- Card -->
 
-<!--Light blue-->
-<button type="button" class="btn btn-light-blue waves-light" mdbRippleRadius>Light blue</button>
 
-<!--Cyan-->
-<button type="button" class="btn btn-cyan waves-light" mdbRippleRadius>Cyan</button>
+  <!--Contact Form-->
+  <form>
 
-<!--Dark-green-->
-<button type="button" class="btn btn-dark-green waves-light" mdbRippleRadius>Dark-green</button>
+    <p class="h5 text-center mb-4">Write to us</p>
 
-<!--Light-green-->
-<button type="button" class="btn btn-light-green waves-light" mdbRippleRadius>Light-green</button>
+    <div class="md-form">
+      <i class="fa fa-user prefix grey-text"></i>
+      <input type="text" id="form3" class="form-control" mdbActive>
+      <label for="form3">Your name</label>
+    </div>
 
-<!--Yellow-->
-<button type="button" class="btn btn-yellow waves-light" mdbRippleRadius>Yellow</button>
+    <div class="md-form">
+      <i class="fa fa-envelope prefix grey-text"></i>
+      <input type="text" id="form2" class="form-control" mdbActive>
+      <label for="form2">Your email</label>
+    </div>
 
-<!--Amber-->
-<button type="button" class="btn btn-amber waves-light" mdbRippleRadius>Amber</button>
+    <div class="md-form">
+      <i class="fa fa-tag prefix grey-text"></i>
+      <input type="text" id="form32" class="form-control" mdbActive>
+      <label for="form34">Subject</label>
+    </div>
 
-<!--Deep-orange-->
-<button type="button" class="btn btn-deep-orange waves-light" mdbRippleRadius>Deep-orange</button>
+    <div class="md-form">
+      <i class="fa fa-pencil prefix grey-text"></i>
+      <textarea type="text" id="form8" class="md-textarea" style="height: 100px" mdbActive></textarea>
+      <label for="form8">Your message</label>
+    </div>
 
-<!--Brown-->
-<button type="button" class="btn btn-brown waves-light" mdbRippleRadius>Brown</button>
+    <div class="text-center">
+      <button class="btn btn-unique waves-light" mdbRippleRadius>Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+    </div>
 
-<!--Blue-grey-->
-<button type="button" class="btn btn-blue-grey waves-light" mdbRippleRadius>Blue-grey</button>
-
-<!--MDB-->
-<button type="button" class="btn btn-mdb waves-light" mdbRippleRadius>MDB</button>
-                                    
-
-<button type="button" class="btn btn-outline-primary" mdbRippleRadius>Primary</button>
-<button type="button" class="btn btn-outline-default" mdbRippleRadius>Default</button>
-<button type="button" class="btn btn-outline-secondary" mdbRippleRadius>Secondary</button>
-<button type="button" class="btn btn-outline-success" mdbRippleRadius>Success</button>
-<button type="button" class="btn btn-outline-info" mdbRippleRadius>Info</button>
-<button type="button" class="btn btn-outline-warning" mdbRippleRadius>Warning</button>
-<button type="button" class="btn btn-outline-danger" mdbRippleRadius>Danger</button>
+  </form>
+  <!--Contact Form-->
+</div>
