@@ -24,6 +24,11 @@ module.exports = {
     'vendor': './src/vendor.ts',
     'main': './src/main.ts'
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+    hot: true
+  },
   resolve: {
     extensions: ['.ts', '.js', '.json'],
     modules: [helpers.root('src'), helpers.root('node_modules')]
@@ -117,6 +122,7 @@ module.exports = {
       // excludeAssets: [/shared.*.js/, /shared.*.css/]
       excludeAssets: [/main.*.css/]
     }),
+    new webpack.HotModuleReplacementPlugin(),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'defer'
     }),
